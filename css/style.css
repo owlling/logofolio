@@ -1,0 +1,260 @@
+
+/*
+
+ For owlling
+ v1.0
+ 2020.06.02
+
+ */
+
+body {
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 3em;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+h6{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF2D4D;
+}
+
+
+.logo {
+     width: 40px;
+     height: 40px;
+     vertical-align:middle;
+     padding-right: 32px;
+ }
+
+.owl-logo {
+     width: 40px;
+     height: 40px;
+     float: right;
+     padding-right: 32px;
+ }
+
+.owl-logo:hover {
+     opacity: 0.7;
+     -webkit-transition: all 0.3s ease-in-out;
+ }
+
+.left-right-line {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+}
+
+.bottom-line-mobile {
+    border-bottom: 2px solid black;
+}
+
+.bottom-line-desktop {
+    border-bottom: 0px;
+}
+
+.header-mobile {
+    display: block;
+}
+
+.header-mobile div {
+    padding: 20px;
+}
+
+.header-desktop {
+    display: none;
+}
+
+
+.grid-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.grid-row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.filter{
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.filter:hover{
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.contact{
+    background-color: #000; 
+    padding: 8px; 
+    color:#fff;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.contact:hover{
+    background-color: #FF2D4D; 
+    padding: 8px; 
+    color:#fff;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.grid-box {
+    padding: 10px;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+
+.caption-text-left {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    padding-left: 10px;
+}
+
+.caption-text-right {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    padding-right: 10px;
+}
+
+.competition {
+    padding: 30px;
+    border-bottom: 2px solid black;
+    text-align: center;
+
+}
+
+.footer {
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* For phone */
+
+@media (min-width: 550px) {
+
+    .header-desktop {
+        display: block;
+    }
+
+
+    .header-mobile {
+        display: none;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .competition {
+        border-bottom: none;
+
+    }
+
+    .bottom-line-desktop {
+        border-bottom: 2px solid black;
+    }
+
+    .grid-header {
+        height: 60px;
+        flex-direction: row;
+        align-items: stretch;
+
+    }
+    .grid-row {
+        flex-direction: row;
+        border-bottom: 2px solid black;
+        align-items: stretch;
+    }
+
+    .grid-box {
+        flex: 1;
+        padding: 10px;
+        border-bottom: none;
+
+    }
+
+    .middle-box {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+    }
+
+    .left-border {
+        border-left: 2px solid black;
+
+    }
+
+    .logo-box {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: none;
+    }
+
+    .footer {
+        border-bottom: 2px solid black;
+        text-align: center;
+        padding: 20px;
+    }
+
+}
