@@ -98,6 +98,7 @@ a:hover {
 
 .bottom-line-mobile {
     border-bottom: 2px solid black;
+    font-size: 0.7em;
 }
 
 .bottom-line-desktop {
@@ -206,7 +207,7 @@ a:hover {
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 0.7em;
     }
 
     .competition {
